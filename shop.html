@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop Sarees — Al-Fajar Cloth House (Demo)</title>
+    <meta name="description" content="Browse the demo saree collection for Al-Fajar Cloth House, Ichhra, Lahore. Search by name and filter by category.">
+    <meta name="theme-color" content="#800020">
+    <link rel="icon" href="assets/images/logo-al-fajar.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body data-page="shop">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header"></header>
+
+    <main id="main">
+      <section class="page-hero" aria-labelledby="shop-title">
+        <div class="container">
+          <p class="eyebrow eyebrow--ruled">The collection</p>
+          <h1 id="shop-title">Shop sarees</h1>
+          <p class="lead">Browse the sample collection, then enquire about any design that catches your eye.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Products">
+        <div class="container">
+          <div class="demo-notice demo-notice--spaced" role="note">
+            <p><strong>Demonstration data:</strong> all products, photos and prices on this page are illustrative samples and do not represent actual Al-Fajar stock or pricing.</p>
+          </div>
+
+          <form class="shop-tools" role="search" id="shop-tools">
+            <div class="search-field">
+              <label for="product-search">Search by name</label>
+              <div class="search-field__wrap">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="m16 16 4.5 4.5"/></svg>
+                <input type="search" id="product-search" name="q" placeholder="e.g. floral, pastel, border" autocomplete="off">
+              </div>
+            </div>
+            <fieldset class="filter-group">
+              <legend>Category</legend>
+              <div class="chips" id="category-filters"></div>
+            </fieldset>
+          </form>
+
+          <div class="results-bar">
+            <p id="results-count" aria-live="polite"></p>
+            <p>Prices in PKR · <span class="sample-tag">Sample prices</span></p>
+          </div>
+
+          <div class="product-grid" id="product-grid">
+            <noscript><p>Please enable JavaScript to view the collection.</p></noscript>
+          </div>
+
+          <div class="empty-state" id="empty-state" hidden>
+            <h2>No sarees match your search</h2>
+            <p>Try a different word, or clear the filters to see the full collection.</p>
+            <button class="btn btn--outline" type="button" id="clear-filters">Clear search &amp; filters</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="site-footer"></footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+# Plain static site: no build step, publish the project folder as-is.
+[build]
+  publish = "."
+  command = ""
+
+# Cache CSS, JS and images for a day; HTML is always revalidated by Netlify.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
